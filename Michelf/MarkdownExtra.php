@@ -1325,7 +1325,7 @@ class MarkdownExtra extends \Michelf\Markdown {
 		if ($classname != "") {
 			if ($classname{0} == '.')
 				$classname = substr($classname, 1);
-			$attr_str = ' class="'.$this->code_class_prefix.$classname.'"';
+			$attr_str = ' data-language="'.$this->code_class_prefix.$classname.'"';
 		} else {
 			$attr_str = $this->doExtraAttributes($this->code_attr_on_pre ? "pre" : "code", $attrs);
 		}
